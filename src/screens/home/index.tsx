@@ -204,9 +204,15 @@ export default function Home() {
                 </Button>
                 <Group className='z-20'>
                     {COLORS.map((swatch) => (
-                        <ColorSwatch key={swatch} color={swatch} onClick={() => setColor(swatch)} />
+                        <ColorSwatch 
+                            key={swatch} 
+                            color={swatch} 
+                            onClick={() => setColor(swatch)} 
+                            className="custom-swatch"                     
+                        />
                     ))}
                 </Group>
+
                 <Button
                     onClick={runRoute}
                     className='z-20 bg-black text-white'

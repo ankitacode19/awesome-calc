@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-swatch {
+  width: 30px;
+  height: 30px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transform: rotate(30deg); /* Rotates the hexagon */
+}
+
+
 
 @layer base {
   :root {
